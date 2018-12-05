@@ -1,0 +1,206 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.captionBot {
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 25px "Lato", sans-serif;
+    color: #111;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+}
+
+h33 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #ddd;
+}
+
+h4 {
+    letter-spacing: 1px;
+    font: 15px;
+    color: #000000;
+}
+
+hb {
+    color: #000000;
+    font-weight:bold;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.nav-wrapper .nav.fixed {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav a {
+    padding: 15px 16px;
+    text-align: center;
+    display: block;
+    color: #777;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.nav a.active {
+    background-color: #AACDF1;
+    color: white;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #AACDF1;
+    top: 0;
+    bottom: 0;
+    left: 20%;
+}
+
+/* Container around content */
+.container {
+    padding: 14px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 60%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 4px solid #AACDF1;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    left: -9px;
+}
+
+/* The actual content */
+.content {
+    padding: 0px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    
+}
+
+.image-container {
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.a, .b { float: left; }
+.a img, .b img {
+    width: 100%;
+    }
+.a { width: 50%; }
+.b { width: 50%; }
+
+@media screen and (max-width: 767px) {
+    .a, .b { width: 100%; }
+}
+
+.column1 {
+    float: left;
+    padding-left: 5px;
+    width: 30%;
+}
+
+.column2 {
+    float: left;
+    padding-left: 5px;
+    width: 70%;
+}
+
+.row {
+    padding-left:7%;
+    padding-right:7%;
+    padding-top:18px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#p01 {
+    color: #AACDF1;
+}
+
+#p02 {
+    letter-spacing: 2px;
+    line-height: 1.4;
+    font-size: 17px;
+
+}
+
+figure{
+    display:table;
+}
+figcaption{
+    display:table-caption;
+    caption-side:bottom;
+    text-align: center;
+}
+
